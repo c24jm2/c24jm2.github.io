@@ -4,45 +4,65 @@
 
 	<title></title>
 	 
-	<style type="text/css">
-
-		#box{
-			width:1200px;
-			height:100px;
-			background-color:cyan;
-			
-			<
-
-
-
-			}
-	</style>
+	
 </head>
 
+<style type="text/css">
+	
+	#animalbox{
+		height:1000px;
+		width:800px;
+	}
 
+	#button{
+
+
+		height: 80px;
+		width: 100px;
+	}
+
+
+</style>
 
 <body>
-<div id="box"><center></center></div>
-<button id="button"><center> Your spirit animal
+
 	
-
-</center></button>
-
-		<script type="text/javascript">
-			
-			var sentence = document.getElementById(
+	<div id="animalBox">
+		
 
 
-				"sentence")
+	</div>
+	<center>
+
+		<button id="button">What is your spirit animal?
+
+		</button>
+		</center>
+
+	<script type="text/javascript">
+		var box = document.getElementById("animalBox");
+
+		var button = document.getElementById("button");
+
+		button.addEventListener("click", function(){
+			var random = Math.round(Math.random()*2);
+			console.log(random)
+			box.style.backgroundImage=list[random];
+		})
+
+		var list = [
+		"url(https://animalfactguide.com/wp-content/uploads/2013/01/iStock_000006372643XSmall.jpg)",
+
+		"url(https://storage.googleapis.com/afs-prod/media/01ab38433c0f4dd7acdf5999cdabd422/3000.jpeg)", 
+
+		"url(https://imgcp.aacdn.jp/img-a/1200/900/global-aaj-front/article/2016/08/57c39d25ce95a_57c3981581be2_2055051011.jpg)"
 
 
+		] 
 
-
-
-		</script>
+	</script>
 
 </body>
-
 
 
 
