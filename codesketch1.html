@@ -1,43 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<title></title>
-	 
-	
+
+	<style type="text/css">
+		
+		#animalBox{
+			width:800px;
+			height:500px;
+/*			border:1px solid black;
+*/			background-size:contain;
+			background-position:center;
+			background-repeat:no-repeat;
+		}
+
+		#button{
+			width: 600px;
+			height: 100px;
+
+
+
+		}
+	</style>
 </head>
-
-<style type="text/css">
-	
-	#animalbox{
-		height:1000px;
-		width:800px;
-	}
-
-	#button{
-
-
-		height: 80px;
-		width: 100px;
-	}
-
-
-</style>
-
 <body>
 
-	
-	<div id="animalBox">
-		
-
-
-	</div>
-	<center>
-
-		<button id="button">What is your spirit animal?
-
-		</button>
-		</center>
+	<center><div id="animalBox"></div></center>
+	<center><button id="button">What is your spirit animal?</button></center>
 
 	<script type="text/javascript">
 		var box = document.getElementById("animalBox");
@@ -45,7 +34,7 @@
 		var button = document.getElementById("button");
 
 		button.addEventListener("click", function(){
-			var random = Math.round(Math.random()*2);
+			var random = Math.round(Math.random()*8);
 			console.log(random)
 			box.style.backgroundImage=list[random];
 		})
@@ -55,13 +44,29 @@
 
 		"url(https://storage.googleapis.com/afs-prod/media/01ab38433c0f4dd7acdf5999cdabd422/3000.jpeg)", 
 
-		"url(https://imgcp.aacdn.jp/img-a/1200/900/global-aaj-front/article/2016/08/57c39d25ce95a_57c3981581be2_2055051011.jpg)"
+		"url(https://imgcp.aacdn.jp/img-a/1200/900/global-aaj-front/article/2016/08/57c39d25ce95a_57c3981581be2_2055051011.jpg)",
+
+		"url(https://assets.nrdc.org/sites/default/files/styles/full_content/public/media-uploads/wlds43_654640_2400.jpg?itok=2eXbSQ8S)",
+
+		"url(https://images.immediate.co.uk/production/volatile/sites/23/2014/11/GettyImages-123529247-2a29d6c.jpg?quality=45&resize=620,413)",
+
+		"url(https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg)",
+
+		"url(https://post.greatist.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg)",
+
+		"url(https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg)",
+
+		"url(https://static01.nyt.com/images/2019/04/02/science/28SCI-ZIMMER1/28SCI-ZIMMER1-superJumbo.jpg)",
+
+
 
 
 		] 
 
 	</script>
 
+</body>
+</html>
 </body>
 
 
