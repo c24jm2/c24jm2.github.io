@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	#dog {
+		height: 300px;
+		width: 300px;
+		font-family: arial;
+		font-size: 68px; 
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url(dog.png);
+			position: absolute;
+			
+			}
+
+	#food{
+	background-image: url(images.jpg);
+
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+			
+
+
+	
+
+
+
+	</style>
+
+
+
+
+	
+</head>
+<body id="food">
+	</center><div id="dog"></div>
+	<script type="text/javascript">
+		var dog = document.getElementById("dog");
+		document.addEventListener("mousemove",
+			function(event){
+				dog.style.left= event.clientX-25+'px';
+				dog.style.top= event.clientY-25+'px';
+			}
+			)
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
